@@ -1,0 +1,7 @@
+spring:
+  # 配置thymeleaf，可以用界面跳转
+  thymeleaf:
+    mode: HTML
+  # 指定配置哪种环境
+  profiles:
+    active: dev
