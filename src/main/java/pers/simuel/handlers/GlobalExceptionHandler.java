@@ -18,12 +18,13 @@ import org.springframework.web.servlet.ModelAndView;
  */
 
 @ControllerAdvice
-public class ControllerExceptionHandler {
+public class GlobalExceptionHandler {
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
     @ExceptionHandler(Exception.class)
     public ModelAndView exceptionHandler(HttpServletRequest request, Exception e) throws Exception {
         LOGGER.error("Request URL : {}，Exception : {}", request.getRequestURL(), e);
+        // 判断这个异常是否有状态标记，如果有，则抛出，跳转至其他页面
         if (AnnotationUtils.findAnnotation(e.getClass(), ResponseStatus.class) != null) {
             throw e;
         }

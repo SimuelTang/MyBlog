@@ -1,10 +1,15 @@
 package pers.simuel.exceptions;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
 /**
  * @Author simuel_tang
  * @Date 2021/4/21
  * @Time 13:26
  */
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
 public class NotFoundException extends RuntimeException {
 
     public NotFoundException() {
