@@ -5,13 +5,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
  * @Author simuel_tang
- * @Date 2021/4/21
- * @Time 13:26
+ * @Date 2021/4/26
+ * @Time 10:53
  */
-
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class NotFoundException extends RuntimeException {
-
     public NotFoundException() {
     }
 

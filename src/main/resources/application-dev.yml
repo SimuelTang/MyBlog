@@ -15,7 +15,7 @@ logging:
     com.lrm: debug
   file:
     name: log/blog-dev.log
-  
+
 # 开发环境端口
 server:
   port: 8080

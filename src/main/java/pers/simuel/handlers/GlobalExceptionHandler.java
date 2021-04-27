@@ -2,37 +2,38 @@ package pers.simuel.handlers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.core.annotation.AnnotationUtils;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * @Author simuel_tang
- * @Date 2021/4/21
- * @Time 13:21
- */
+import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 处理Controller中抛出的异常
+ *
+ * @Author simuel_tang
+ * @Date 2021/4/26
+ * @Time 11:09
+ */
 @ControllerAdvice
 public class GlobalExceptionHandler {
-    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
 
     @ExceptionHandler(Exception.class)
     public ModelAndView exceptionHandler(HttpServletRequest request, Exception e) throws Exception {
-        LOGGER.error("Request URL : {}，Exception : {}", request.getRequestURL(), e);
-        // 判断这个异常是否有状态标记，如果有，则抛出，跳转至其他页面
+        logger.error("Requst URL : {}，Exception : {}", request.getRequestURL(), e);
+
+        //如果这个异常有注解标识，说明该异常打算交由容器自身处理
         if (AnnotationUtils.findAnnotation(e.getClass(), ResponseStatus.class) != null) {
             throw e;
         }
-        // 添加异常信息
+
         ModelAndView mv = new ModelAndView();
         mv.addObject("url", request.getRequestURL());
         mv.addObject("exception", e);
-        // 设置我们要跳转的界面名字
         mv.setViewName("error/error");
         return mv;
     }
