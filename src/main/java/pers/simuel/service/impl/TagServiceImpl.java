@@ -10,6 +10,9 @@ import pers.simuel.entity.Tag;
 import pers.simuel.exceptions.NotFoundException;
 import pers.simuel.service.TagService;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Author simuel_tang
  * @Date 2021/4/26
@@ -56,4 +59,27 @@ public class TagServiceImpl implements TagService {
     public void deleteTag(Long id) {
         tagRepository.deleteById(id);
     }
+
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
+    }
+
+    @Override
+    public List<Tag> listTag(String tagIds) {
+        return tagRepository.findAllById(getTagIds(tagIds));
+    }
+
+    private Iterable<Long> getTagIds(String tagIds) {
+        ArrayList<Long> list = new ArrayList<>();
+        if (tagIds != null && !"".equals(tagIds)) {
+            String[] ids = tagIds.split(",");
+            for (String id : ids) {
+                list.add(Long.valueOf(id));
+            }
+        }
+        return list;
+    }
+
+
 }

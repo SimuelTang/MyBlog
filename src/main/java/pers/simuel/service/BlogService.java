@@ -7,4 +7,12 @@ import pers.simuel.entity.Blog;
 
 public interface BlogService {
     Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
+
+    Blog getBlog(Long id);
+
+    Blog saveBlog(Blog blog);
+
+    Blog updateBlog(Long id, Blog blog);
+
+    void deleteBlog(Long id);
 }
