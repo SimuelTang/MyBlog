@@ -1,5 +1,5 @@
-2021-04-25 14:47:52.315  INFO 17888 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 17888 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 14:47:52.341  INFO 17888 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 14:47:52.315  INFO 17888 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 17888 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 14:47:52.341  INFO 17888 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 14:47:52.909  INFO 17888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 14:47:52.909  INFO 17888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 14:47:54.673  INFO 17888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -54,7 +54,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,8 +145,8 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Type is not mapp
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
 	... 79 common frames omitted
 
-2021-04-25 14:50:54.330  INFO 24384 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 24384 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 14:50:54.332  INFO 24384 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 14:50:54.330  INFO 24384 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 24384 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 14:50:54.332  INFO 24384 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 14:50:54.525  INFO 24384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 14:50:54.525  INFO 24384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 14:50:54.949  INFO 24384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -201,7 +201,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -292,8 +292,8 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Type is not mapp
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
 	... 79 common frames omitted
 
-2021-04-25 14:53:10.214  INFO 16968 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16968 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 14:53:10.217  INFO 16968 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 14:53:10.214  INFO 16968 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16968 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 14:53:10.217  INFO 16968 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 14:53:10.434  INFO 16968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 14:53:10.434  INFO 16968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 14:53:10.863  INFO 16968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -348,7 +348,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -439,8 +439,8 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Type is not mapp
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
 	... 79 common frames omitted
 
-2021-04-25 14:57:01.682  INFO 996 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 996 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 14:57:01.686  INFO 996 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 14:57:01.682  INFO 996 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 996 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 14:57:01.686  INFO 996 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 14:57:01.886  INFO 996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 14:57:01.886  INFO 996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 14:57:02.292  INFO 996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -495,7 +495,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:11)
+	at BlogApplication.main(BlogApplication.java:11)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -586,8 +586,8 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Type is not mapp
 	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
 	... 79 common frames omitted
 
-2021-04-25 15:02:05.539  INFO 21536 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 21536 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 15:02:05.541  INFO 21536 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 15:02:05.539  INFO 21536 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 21536 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 15:02:05.541  INFO 21536 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 15:02:05.760  INFO 21536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 15:02:05.761  INFO 21536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 15:02:06.214  INFO 21536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -614,12 +614,12 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Type is not mapp
 2021-04-25 15:02:09.409  INFO 21536 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 15:02:09.523  INFO 21536 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 15:02:10.140  INFO 21536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 15:02:10.147  INFO 21536 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.1 seconds (JVM running for 6.275)
+2021-04-25 15:02:10.147  INFO 21536 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.1 seconds (JVM running for 6.275)
 2021-04-25 15:02:15.935  INFO 21536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 15:02:15.935  INFO 21536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 15:02:15.936  INFO 21536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-25 15:02:16.008  INFO 21536 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 15:02:16.022  INFO 21536 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 15:02:16.008  INFO 21536 --- [http-nio-8080-exec-1] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 15:02:16.022  INFO 21536 --- [http-nio-8080-exec-1] LogAspect             : Result : index
 2021-04-25 15:02:16.440 ERROR 21536 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -791,8 +791,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 15:12:37.478  INFO 8664 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 8664 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 15:12:37.480  INFO 8664 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 15:12:37.478  INFO 8664 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 8664 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 15:12:37.480  INFO 8664 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 15:12:37.736  INFO 8664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 15:12:37.736  INFO 8664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 15:12:38.208  INFO 8664 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -819,7 +819,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 15:12:41.264  INFO 8664 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 15:12:41.349  INFO 8664 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 15:12:41.755  INFO 8664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 15:12:41.773  INFO 8664 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.794 seconds (JVM running for 6.059)
+2021-04-25 15:12:41.773  INFO 8664 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.794 seconds (JVM running for 6.059)
 2021-04-25 15:12:47.904  INFO 8664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 15:12:47.904  INFO 8664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 15:12:47.906  INFO 8664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -1008,8 +1008,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 15:13:04.692  INFO 13452 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 13452 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 15:13:04.694  INFO 13452 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 15:13:04.692  INFO 13452 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 13452 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 15:13:04.694  INFO 13452 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 15:13:04.901  INFO 13452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 15:13:04.901  INFO 13452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 15:13:05.336  INFO 13452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -1036,12 +1036,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 15:13:08.461  INFO 13452 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 15:13:08.530  INFO 13452 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 15:13:08.917  INFO 13452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 15:13:08.924  INFO 13452 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.699 seconds (JVM running for 5.825)
+2021-04-25 15:13:08.924  INFO 13452 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.699 seconds (JVM running for 5.825)
 2021-04-25 15:13:09.134  INFO 13452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 15:13:09.135  INFO 13452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 15:13:09.136  INFO 13452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-04-25 15:57:51.372  INFO 22768 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22768 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 15:57:51.375  INFO 22768 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 15:57:51.372  INFO 22768 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22768 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 15:57:51.375  INFO 22768 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 15:57:51.633  INFO 22768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 15:57:51.634  INFO 22768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 15:57:52.203  INFO 22768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -1068,7 +1068,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 15:57:55.720  INFO 22768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 15:57:55.795  INFO 22768 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 15:57:56.207  INFO 22768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 15:57:56.215  INFO 22768 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.48 seconds (JVM running for 6.801)
+2021-04-25 15:57:56.215  INFO 22768 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.48 seconds (JVM running for 6.801)
 2021-04-25 15:58:09.090  INFO 22768 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 15:58:09.091  INFO 22768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 15:58:09.092  INFO 22768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -1438,8 +1438,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:03:27.473  INFO 20460 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 20460 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:03:27.475  INFO 20460 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:03:27.473  INFO 20460 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 20460 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:03:27.475  INFO 20460 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:03:27.696  INFO 20460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:03:27.696  INFO 20460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:03:28.164  INFO 20460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -1466,12 +1466,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 16:03:31.265  INFO 20460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:03:31.339  INFO 20460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:03:31.722  INFO 20460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:03:31.730  INFO 20460 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.761 seconds (JVM running for 6.017)
+2021-04-25 16:03:31.730  INFO 20460 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.761 seconds (JVM running for 6.017)
 2021-04-25 16:03:55.000  INFO 20460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:03:55.000  INFO 20460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:03:55.001  INFO 20460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-25 16:04:44.630  INFO 18728 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 18728 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:04:44.632  INFO 18728 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:04:44.630  INFO 18728 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 18728 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:04:44.632  INFO 18728 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:04:44.843  INFO 18728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:04:44.843  INFO 18728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:04:45.299  INFO 18728 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -1498,7 +1498,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 16:04:48.457  INFO 18728 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:04:48.535  INFO 18728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:04:48.921  INFO 18728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:04:48.928  INFO 18728 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.807 seconds (JVM running for 6.058)
+2021-04-25 16:04:48.928  INFO 18728 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.807 seconds (JVM running for 6.058)
 2021-04-25 16:05:14.769  INFO 18728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:05:14.770  INFO 18728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:05:14.772  INFO 18728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
@@ -1868,8 +1868,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:17:36.294  INFO 18228 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 18228 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:17:36.296  INFO 18228 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:17:36.294  INFO 18228 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 18228 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:17:36.296  INFO 18228 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:17:36.534  INFO 18228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:17:36.534  INFO 18228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:17:37.094  INFO 18228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -1896,7 +1896,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 16:17:40.364  INFO 18228 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:17:40.438  INFO 18228 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:17:40.834  INFO 18228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:17:40.841  INFO 18228 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.101 seconds (JVM running for 6.373)
+2021-04-25 16:17:40.841  INFO 18228 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.101 seconds (JVM running for 6.373)
 2021-04-25 16:17:52.304  INFO 18228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:17:52.304  INFO 18228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:17:52.305  INFO 18228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -2449,8 +2449,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:19:19.513  INFO 18228 --- [http-nio-8080-exec-4] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:19:19.518  INFO 18228 --- [http-nio-8080-exec-4] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:19:19.513  INFO 18228 --- [http-nio-8080-exec-4] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:19:19.518  INFO 18228 --- [http-nio-8080-exec-4] LogAspect             : Result : index
 2021-04-25 16:19:19.527 ERROR 18228 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -2622,8 +2622,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:19:20.163  INFO 18228 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:19:20.163  INFO 18228 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:19:20.163  INFO 18228 --- [http-nio-8080-exec-1] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:19:20.163  INFO 18228 --- [http-nio-8080-exec-1] LogAspect             : Result : index
 2021-04-25 16:19:20.173 ERROR 18228 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -2795,8 +2795,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:19:21.985  INFO 18228 --- [http-nio-8080-exec-3] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:19:21.985  INFO 18228 --- [http-nio-8080-exec-3] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:19:21.985  INFO 18228 --- [http-nio-8080-exec-3] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:19:21.985  INFO 18228 --- [http-nio-8080-exec-3] LogAspect             : Result : index
 2021-04-25 16:19:21.992 ERROR 18228 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -2968,8 +2968,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:19:34.574  INFO 18228 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:19:34.574  INFO 18228 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:19:34.574  INFO 18228 --- [http-nio-8080-exec-6] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:19:34.574  INFO 18228 --- [http-nio-8080-exec-6] LogAspect             : Result : index
 2021-04-25 16:19:34.581 ERROR 18228 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -3324,8 +3324,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:28:23.871  INFO 13628 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 13628 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:28:23.873  INFO 13628 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:28:23.871  INFO 13628 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 13628 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:28:23.873  INFO 13628 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:28:24.102  INFO 13628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:28:24.102  INFO 13628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:28:24.531  INFO 13628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -3352,7 +3352,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 16:28:28.372  INFO 13628 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:28:28.450  INFO 13628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:28:28.978  INFO 13628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:28:28.987  INFO 13628 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.627 seconds (JVM running for 6.907)
+2021-04-25 16:28:28.987  INFO 13628 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.627 seconds (JVM running for 6.907)
 2021-04-25 16:28:29.868  INFO 13628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:28:29.868  INFO 13628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:28:29.869  INFO 13628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -3961,8 +3961,8 @@ org.attoparser.ParseException: (Line = 2, Column = 53) Malformed markup: Attribu
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:30:05.869  INFO 12552 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 12552 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:30:05.872  INFO 12552 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:30:05.869  INFO 12552 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 12552 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:30:05.872  INFO 12552 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:30:06.157  INFO 12552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:30:06.157  INFO 12552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:30:06.650  INFO 12552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -3989,12 +3989,12 @@ org.attoparser.ParseException: (Line = 2, Column = 53) Malformed markup: Attribu
 2021-04-25 16:30:10.270  INFO 12552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:30:10.548  INFO 12552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:30:11.109  INFO 12552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:30:11.119  INFO 12552 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.78 seconds (JVM running for 7.163)
+2021-04-25 16:30:11.119  INFO 12552 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.78 seconds (JVM running for 7.163)
 2021-04-25 16:30:14.769  INFO 12552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:30:14.769  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:30:14.770  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-25 16:30:14.791  INFO 12552 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:30:14.799  INFO 12552 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:30:14.791  INFO 12552 --- [http-nio-8080-exec-1] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:30:14.799  INFO 12552 --- [http-nio-8080-exec-1] LogAspect             : Result : index
 2021-04-25 16:30:15.088 ERROR 12552 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -4166,8 +4166,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:30:16.281  INFO 12552 --- [http-nio-8080-exec-9] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:30:16.281  INFO 12552 --- [http-nio-8080-exec-9] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:30:16.281  INFO 12552 --- [http-nio-8080-exec-9] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:30:16.281  INFO 12552 --- [http-nio-8080-exec-9] LogAspect             : Result : index
 2021-04-25 16:30:16.289 ERROR 12552 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -4339,8 +4339,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:30:17.965  INFO 12552 --- [http-nio-8080-exec-7] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:30:17.965  INFO 12552 --- [http-nio-8080-exec-7] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:30:17.965  INFO 12552 --- [http-nio-8080-exec-7] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:30:17.965  INFO 12552 --- [http-nio-8080-exec-7] LogAspect             : Result : index
 2021-04-25 16:30:17.972 ERROR 12552 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -4512,8 +4512,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:30:20.236  INFO 12552 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:30:20.236  INFO 12552 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:30:20.236  INFO 12552 --- [http-nio-8080-exec-6] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:30:20.236  INFO 12552 --- [http-nio-8080-exec-6] LogAspect             : Result : index
 2021-04-25 16:30:20.246 ERROR 12552 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -4685,8 +4685,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:30:23.918  INFO 12552 --- [http-nio-8080-exec-4] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:30:23.918  INFO 12552 --- [http-nio-8080-exec-4] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:30:23.918  INFO 12552 --- [http-nio-8080-exec-4] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:30:23.918  INFO 12552 --- [http-nio-8080-exec-4] LogAspect             : Result : index
 2021-04-25 16:30:23.928 ERROR 12552 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -4858,8 +4858,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:30:25.094  INFO 12552 --- [http-nio-8080-exec-3] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:30:25.094  INFO 12552 --- [http-nio-8080-exec-3] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:30:25.094  INFO 12552 --- [http-nio-8080-exec-3] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:30:25.094  INFO 12552 --- [http-nio-8080-exec-3] LogAspect             : Result : index
 2021-04-25 16:30:25.098 ERROR 12552 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -5031,8 +5031,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:19.483  INFO 12552 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:19.483  INFO 12552 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:19.483  INFO 12552 --- [http-nio-8080-exec-6] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:19.483  INFO 12552 --- [http-nio-8080-exec-6] LogAspect             : Result : index
 2021-04-25 16:31:19.489 ERROR 12552 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -5204,8 +5204,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:22.596  INFO 12552 --- [http-nio-8080-exec-3] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:22.596  INFO 12552 --- [http-nio-8080-exec-3] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:22.596  INFO 12552 --- [http-nio-8080-exec-3] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:22.596  INFO 12552 --- [http-nio-8080-exec-3] LogAspect             : Result : index
 2021-04-25 16:31:22.601 ERROR 12552 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -5377,8 +5377,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:24.180  INFO 12552 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:24.180  INFO 12552 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:24.180  INFO 12552 --- [http-nio-8080-exec-1] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:24.180  INFO 12552 --- [http-nio-8080-exec-1] LogAspect             : Result : index
 2021-04-25 16:31:24.185 ERROR 12552 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -5550,8 +5550,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:25.020  INFO 12552 --- [http-nio-8080-exec-7] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:25.020  INFO 12552 --- [http-nio-8080-exec-7] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:25.020  INFO 12552 --- [http-nio-8080-exec-7] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:25.020  INFO 12552 --- [http-nio-8080-exec-7] LogAspect             : Result : index
 2021-04-25 16:31:25.026 ERROR 12552 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -5723,8 +5723,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:25.594  INFO 12552 --- [http-nio-8080-exec-2] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:25.595  INFO 12552 --- [http-nio-8080-exec-2] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:25.594  INFO 12552 --- [http-nio-8080-exec-2] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:25.595  INFO 12552 --- [http-nio-8080-exec-2] LogAspect             : Result : index
 2021-04-25 16:31:25.600 ERROR 12552 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -5896,8 +5896,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:30.940  INFO 12552 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:30.940  INFO 12552 --- [http-nio-8080-exec-6] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:30.940  INFO 12552 --- [http-nio-8080-exec-6] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:30.940  INFO 12552 --- [http-nio-8080-exec-6] LogAspect             : Result : index
 2021-04-25 16:31:30.946 ERROR 12552 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -6069,8 +6069,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:31:41.351  INFO 16720 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16720 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:31:41.353  INFO 16720 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:31:41.351  INFO 16720 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16720 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:31:41.353  INFO 16720 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:31:41.549  INFO 16720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:31:41.549  INFO 16720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:31:42.077  INFO 16720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -6097,12 +6097,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 16:31:45.441  INFO 16720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:31:45.516  INFO 16720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:31:45.911  INFO 16720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:31:45.919  INFO 16720 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.031 seconds (JVM running for 6.865)
+2021-04-25 16:31:45.919  INFO 16720 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.031 seconds (JVM running for 6.865)
 2021-04-25 16:31:49.909  INFO 16720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:31:49.909  INFO 16720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:31:49.911  INFO 16720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-04-25 16:31:49.931  INFO 16720 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 16:31:49.939  INFO 16720 --- [http-nio-8080-exec-1] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 16:31:49.931  INFO 16720 --- [http-nio-8080-exec-1] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 16:31:49.939  INFO 16720 --- [http-nio-8080-exec-1] LogAspect             : Result : index
 2021-04-25 16:31:50.242 ERROR 16720 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -6395,8 +6395,8 @@ org.attoparser.ParseException: (Line = 2, Column = 53) Malformed markup: Attribu
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:32:52.783  INFO 11888 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 11888 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:32:52.786  INFO 11888 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:32:52.783  INFO 11888 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 11888 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:32:52.786  INFO 11888 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:32:52.998  INFO 11888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:32:52.999  INFO 11888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:32:53.446  INFO 11888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -6423,7 +6423,7 @@ org.attoparser.ParseException: (Line = 2, Column = 53) Malformed markup: Attribu
 2021-04-25 16:32:56.585  INFO 11888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:32:56.658  INFO 11888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:32:57.040  INFO 11888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:32:57.047  INFO 11888 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.739 seconds (JVM running for 5.976)
+2021-04-25 16:32:57.047  INFO 11888 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.739 seconds (JVM running for 5.976)
 2021-04-25 16:33:02.538  INFO 11888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:33:02.538  INFO 11888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:33:02.540  INFO 11888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -6610,8 +6610,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 16:39:24.620  INFO 15248 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 15248 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 16:39:24.623  INFO 15248 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 16:39:24.620  INFO 15248 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 15248 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 16:39:24.623  INFO 15248 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 16:39:24.848  INFO 15248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 16:39:24.849  INFO 15248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 16:39:25.338  INFO 15248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -6638,7 +6638,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 16:39:28.469  INFO 15248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 16:39:28.544  INFO 15248 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 16:39:28.938  INFO 15248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 16:39:28.945  INFO 15248 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.832 seconds (JVM running for 6.104)
+2021-04-25 16:39:28.945  INFO 15248 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.832 seconds (JVM running for 6.104)
 2021-04-25 16:39:47.382  INFO 15248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 16:39:47.383  INFO 15248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 16:39:47.383  INFO 15248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
@@ -6826,8 +6826,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at java.lang.Thread.run(Thread.java:748)
 
 2021-04-25 17:12:51.627  WARN 15248 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m24s397ms187µs600ns).
-2021-04-25 17:17:37.053  INFO 22556 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22556 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 17:17:37.057  INFO 22556 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 17:17:37.053  INFO 22556 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22556 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 17:17:37.057  INFO 22556 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 17:17:37.390  INFO 22556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 17:17:37.391  INFO 22556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 17:17:37.882  INFO 22556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -6854,10 +6854,10 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 17:17:41.294  INFO 22556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 17:17:41.374  INFO 22556 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 17:17:41.792  INFO 22556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 17:17:41.801  INFO 22556 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.374 seconds (JVM running for 6.727)
+2021-04-25 17:17:41.801  INFO 22556 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.374 seconds (JVM running for 6.727)
 2021-04-25 18:20:25.265  WARN 22556 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m39s741ms886µs700ns).
-2021-04-25 18:23:45.629  INFO 18664 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 18664 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:23:45.631  INFO 18664 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:23:45.629  INFO 18664 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 18664 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:23:45.631  INFO 18664 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:23:45.846  INFO 18664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:23:45.846  INFO 18664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:23:46.340  INFO 18664 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -6884,12 +6884,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 18:23:49.903  INFO 18664 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:23:49.978  INFO 18664 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:23:50.374  INFO 18664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:23:50.382  INFO 18664 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.285 seconds (JVM running for 6.642)
+2021-04-25 18:23:50.382  INFO 18664 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.285 seconds (JVM running for 6.642)
 2021-04-25 18:25:27.255  INFO 18664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:25:27.256  INFO 18664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:25:27.256  INFO 18664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-04-25 18:25:32.979  INFO 18664 --- [http-nio-8080-exec-9] pers.simuel.aspect.LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
-2021-04-25 18:25:32.992  INFO 18664 --- [http-nio-8080-exec-9] pers.simuel.aspect.LogAspect             : Result : index
+2021-04-25 18:25:32.979  INFO 18664 --- [http-nio-8080-exec-9] LogAspect             : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.web.IndexController.index', args=[]}
+2021-04-25 18:25:32.992  INFO 18664 --- [http-nio-8080-exec-9] LogAspect             : Result : index
 2021-04-25 18:25:33.014 ERROR 18664 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
 
 org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
@@ -7061,8 +7061,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 18:27:05.243  INFO 6792 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 6792 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:27:05.245  INFO 6792 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:27:05.243  INFO 6792 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 6792 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:27:05.245  INFO 6792 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:27:05.488  INFO 6792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:27:05.488  INFO 6792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:27:05.953  INFO 6792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -7089,7 +7089,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 18:27:09.261  INFO 6792 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:27:09.337  INFO 6792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:27:09.739  INFO 6792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:27:09.746  INFO 6792 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.077 seconds (JVM running for 6.349)
+2021-04-25 18:27:09.746  INFO 6792 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.077 seconds (JVM running for 6.349)
 2021-04-25 18:27:15.888  INFO 6792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:27:15.889  INFO 6792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:27:15.889  INFO 6792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
@@ -7276,8 +7276,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 18:28:37.007  INFO 20564 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 20564 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:28:37.009  INFO 20564 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:28:37.007  INFO 20564 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 20564 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:28:37.009  INFO 20564 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:28:37.246  INFO 20564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:28:37.247  INFO 20564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:28:37.764  INFO 20564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -7304,12 +7304,12 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 18:28:41.663  INFO 20564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:28:41.770  INFO 20564 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:28:42.290  INFO 20564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:28:42.301  INFO 20564 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.884 seconds (JVM running for 7.278)
+2021-04-25 18:28:42.301  INFO 20564 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.884 seconds (JVM running for 7.278)
 2021-04-25 18:29:02.443  INFO 20564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:29:02.443  INFO 20564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:29:02.444  INFO 20564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-04-25 18:31:31.128  INFO 7156 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 7156 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:31:31.131  INFO 7156 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:31:31.128  INFO 7156 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 7156 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:31:31.131  INFO 7156 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:31:31.389  INFO 7156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:31:31.389  INFO 7156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:31:31.900  INFO 7156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -7336,7 +7336,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 18:31:35.784  INFO 7156 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:31:35.874  INFO 7156 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:31:36.312  INFO 7156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:31:36.319  INFO 7156 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.876 seconds (JVM running for 7.469)
+2021-04-25 18:31:36.319  INFO 7156 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.876 seconds (JVM running for 7.469)
 2021-04-25 18:31:54.824  INFO 7156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:31:54.824  INFO 7156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:31:54.825  INFO 7156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -7507,8 +7507,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 18:32:43.382  INFO 16772 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16772 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:32:43.385  INFO 16772 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:32:43.382  INFO 16772 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16772 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:32:43.385  INFO 16772 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:32:43.606  INFO 16772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:32:43.606  INFO 16772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:32:44.122  INFO 16772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -7535,7 +7535,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 18:32:47.671  INFO 16772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:32:47.755  INFO 16772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:32:48.176  INFO 16772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:32:48.184  INFO 16772 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 5.436 seconds (JVM running for 6.757)
+2021-04-25 18:32:48.184  INFO 16772 --- [restartedMain] BlogApplication              : Started BlogApplication in 5.436 seconds (JVM running for 6.757)
 2021-04-25 18:32:48.276  INFO 16772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:32:48.276  INFO 16772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:32:48.278  INFO 16772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
@@ -7706,8 +7706,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 18:34:01.382  INFO 2376 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 2376 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:34:01.384  INFO 2376 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:34:01.382  INFO 2376 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 2376 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:34:01.384  INFO 2376 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:34:01.606  INFO 2376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:34:01.607  INFO 2376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:34:02.059  INFO 2376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -7734,7 +7734,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2021-04-25 18:34:05.283  INFO 2376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:34:05.356  INFO 2376 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:34:05.742  INFO 2376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:34:05.749  INFO 2376 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.926 seconds (JVM running for 6.182)
+2021-04-25 18:34:05.749  INFO 2376 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.926 seconds (JVM running for 6.182)
 2021-04-25 18:34:16.039  INFO 2376 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:34:16.039  INFO 2376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:34:16.041  INFO 2376 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
@@ -7939,8 +7939,8 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 18:43:07.571  INFO 22888 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22888 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 18:43:07.574  INFO 22888 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 18:43:07.571  INFO 22888 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22888 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 18:43:07.574  INFO 22888 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 18:43:07.772  INFO 22888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 18:43:07.772  INFO 22888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 18:43:08.197  INFO 22888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -7967,7 +7967,7 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
 2021-04-25 18:43:11.517  INFO 22888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2021-04-25 18:43:11.591  INFO 22888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
 2021-04-25 18:43:11.991  INFO 22888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-04-25 18:43:11.998  INFO 22888 --- [restartedMain] pers.simuel.BlogApplication              : Started BlogApplication in 4.913 seconds (JVM running for 6.153)
+2021-04-25 18:43:11.998  INFO 22888 --- [restartedMain] BlogApplication              : Started BlogApplication in 4.913 seconds (JVM running for 6.153)
 2021-04-25 18:43:12.119  INFO 22888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-04-25 18:43:12.120  INFO 22888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-04-25 18:43:12.120  INFO 22888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
@@ -8154,8 +8154,8 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2021-04-25 19:35:48.002  INFO 25112 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 25112 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:35:48.004  INFO 25112 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:35:48.002  INFO 25112 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 25112 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:35:48.004  INFO 25112 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:35:48.242  INFO 25112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:35:48.242  INFO 25112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:35:48.765  INFO 25112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8207,7 +8207,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8228,8 +8228,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 19:40:12.377  INFO 17924 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 17924 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:40:12.379  INFO 17924 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:40:12.377  INFO 17924 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 17924 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:40:12.379  INFO 17924 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:40:12.640  INFO 17924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:40:12.640  INFO 17924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:40:13.303  INFO 17924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8281,7 +8281,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8302,8 +8302,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 19:47:57.325  INFO 12056 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 12056 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:47:57.327  INFO 12056 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:47:57.325  INFO 12056 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 12056 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:47:57.327  INFO 12056 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:47:57.517  INFO 12056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:47:57.517  INFO 12056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:47:58.079  INFO 12056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8330,8 +8330,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 2021-04-25 19:48:55.458  INFO 12056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-04-25 19:48:55.463  INFO 12056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-04-25 19:48:55.468  INFO 12056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-04-25 19:53:08.053  INFO 22424 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22424 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:53:08.055  INFO 22424 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:53:08.053  INFO 22424 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 22424 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:53:08.055  INFO 22424 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:53:08.234  INFO 22424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:53:08.234  INFO 22424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:53:08.659  INFO 22424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8383,7 +8383,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8404,8 +8404,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 19:57:33.493  INFO 3272 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 3272 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:57:33.496  INFO 3272 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:57:33.493  INFO 3272 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 3272 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:57:33.496  INFO 3272 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:57:33.688  INFO 3272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:57:33.689  INFO 3272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:57:34.131  INFO 3272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8432,7 +8432,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8481,8 +8481,8 @@ Caused by: java.lang.IllegalArgumentException: warning no match for this type na
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
 	... 42 common frames omitted
 
-2021-04-25 19:59:22.567  INFO 23112 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 23112 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:59:22.569  INFO 23112 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:59:22.567  INFO 23112 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 23112 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:59:22.569  INFO 23112 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:59:22.765  INFO 23112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:59:22.765  INFO 23112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:59:23.301  INFO 23112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8509,8 +8509,8 @@ Caused by: java.lang.IllegalArgumentException: warning no match for this type na
 2021-04-25 19:59:29.946  INFO 23112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-04-25 19:59:29.950  INFO 23112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-04-25 19:59:29.953  INFO 23112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-04-25 19:59:34.966  INFO 10672 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 10672 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 19:59:34.970  INFO 10672 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 19:59:34.966  INFO 10672 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 10672 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 19:59:34.970  INFO 10672 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 19:59:35.189  INFO 10672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 19:59:35.189  INFO 10672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 19:59:35.637  INFO 10672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8562,7 +8562,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8583,8 +8583,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 20:18:10.361  INFO 16772 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16772 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 20:18:10.363  INFO 16772 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 20:18:10.361  INFO 16772 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16772 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 20:18:10.363  INFO 16772 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 20:18:10.558  INFO 16772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 20:18:10.559  INFO 16772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 20:18:11.014  INFO 16772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8636,7 +8636,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8657,8 +8657,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 20:22:13.191  INFO 19300 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 19300 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 20:22:13.193  INFO 19300 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 20:22:13.191  INFO 19300 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 19300 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 20:22:13.193  INFO 19300 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 20:22:13.392  INFO 19300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 20:22:13.392  INFO 19300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 20:22:13.861  INFO 19300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8710,7 +8710,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8731,8 +8731,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 20:23:24.337  INFO 24012 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 24012 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 20:23:24.340  INFO 24012 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 20:23:24.337  INFO 24012 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 24012 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 20:23:24.340  INFO 24012 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 20:23:24.519  INFO 24012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 20:23:24.519  INFO 24012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 20:23:24.950  INFO 24012 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8784,7 +8784,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:9)
+	at BlogApplication.main(BlogApplication.java:9)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8805,8 +8805,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 20:47:26.334  INFO 12112 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 12112 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 20:47:26.336  INFO 12112 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 20:47:26.334  INFO 12112 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 12112 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 20:47:26.336  INFO 12112 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 20:47:26.546  INFO 12112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 20:47:26.547  INFO 12112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 20:47:26.970  INFO 12112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8858,7 +8858,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:10)
+	at BlogApplication.main(BlogApplication.java:10)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -8879,8 +8879,8 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'co
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
 	... 23 common frames omitted
 
-2021-04-25 20:47:56.144  INFO 15196 --- [restartedMain] pers.simuel.BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 15196 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
-2021-04-25 20:47:56.146  INFO 15196 --- [restartedMain] pers.simuel.BlogApplication              : The following profiles are active: dev
+2021-04-25 20:47:56.144  INFO 15196 --- [restartedMain] BlogApplication              : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 15196 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-04-25 20:47:56.146  INFO 15196 --- [restartedMain] BlogApplication              : The following profiles are active: dev
 2021-04-25 20:47:56.363  INFO 15196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 2021-04-25 20:47:56.363  INFO 15196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 2021-04-25 20:47:56.800  INFO 15196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
@@ -8932,7 +8932,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at pers.simuel.BlogApplication.main(BlogApplication.java:10)
+	at BlogApplication.main(BlogApplication.java:10)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
