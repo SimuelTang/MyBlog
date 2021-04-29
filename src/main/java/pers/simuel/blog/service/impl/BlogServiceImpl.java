@@ -44,7 +44,6 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blogQuery) {
-
         return blogRepository.findAll((Specification<Blog>) (root, criteriaQuery, criteriaBuilder) -> {
             List<Predicate> predicates = new ArrayList<>();
             if (!"".equals(blogQuery.getTitle()) && blogQuery.getTitle() != null) {
@@ -93,6 +92,7 @@ public class BlogServiceImpl implements BlogService {
         if (blogToBeUpdated == null) {
             throw new NotFoundException("这篇博客不存在");
         }
+        // 更新时忽略所有的空值
         BeanUtils.copyProperties(blog, blogToBeUpdated, MyBeanUtils.getNullPropertyNames(blog));
         blogToBeUpdated.setUpdateTime(new Date());
         return blogRepository.save(blogToBeUpdated);
@@ -139,5 +139,10 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Page<Blog> listBlog(String query, Pageable pageable) {
         return blogRepository.findByQuery(query, pageable);
+    }
+
+    @Override
+    public Page<Blog> listPublishedBlog(Pageable pageable) {
+        return blogRepository.findPublishedBlog(pageable);
     }
 }

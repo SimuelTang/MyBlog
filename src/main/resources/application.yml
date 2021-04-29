@@ -7,3 +7,5 @@ spring:
   # 指定配置哪种环境
   profiles:
     active: dev
+  messages:
+    basename: i18n/messages

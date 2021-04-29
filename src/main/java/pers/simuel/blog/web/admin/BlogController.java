@@ -72,6 +72,8 @@ public class BlogController {
     }
 
     /**
+     * 管理员编辑某篇博客时映射此方法
+     *
      * @param id
      * @param model
      * @return

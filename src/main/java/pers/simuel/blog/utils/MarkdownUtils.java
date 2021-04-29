@@ -8,8 +8,6 @@ import org.commonmark.node.Link;
 import org.commonmark.node.Node;
 import org.commonmark.parser.Parser;
 import org.commonmark.renderer.html.AttributeProvider;
-import org.commonmark.renderer.html.AttributeProviderContext;
-import org.commonmark.renderer.html.AttributeProviderFactory;
 import org.commonmark.renderer.html.HtmlRenderer;
 
 import java.util.Collections;
@@ -24,7 +22,7 @@ import java.util.Set;
  */
 public class MarkdownUtils {
     public static String markdownToHtmlExtensions(String content) {
-        //h标题生成id
+        //标题生成id
         Set<Extension> headingAnchorExtensions = Collections.singleton(HeadingAnchorExtension.create());
         //转换table的HTML
         List<Extension> tableExtension = Collections.singletonList(TablesExtension.create());
@@ -35,11 +33,7 @@ public class MarkdownUtils {
         HtmlRenderer renderer = HtmlRenderer.builder()
                 .extensions(headingAnchorExtensions)
                 .extensions(tableExtension)
-                .attributeProviderFactory(new AttributeProviderFactory() {
-                    public AttributeProvider create(AttributeProviderContext context) {
-                        return new CustomAttributeProvider();
-                    }
-                })
+                .attributeProviderFactory(context -> new CustomAttributeProvider())
                 .build();
         return renderer.render(document);
     }
