@@ -42,7 +42,6 @@ public class IndexController {
     @GetMapping("/")
     public String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model) {
-//        model.addAttribute("page", blogService.listBlog(pageable)); // 中间的博客信息
         model.addAttribute("page", blogService.listPublishedBlog(pageable)); // 中间的博客信息
         model.addAttribute("types", typeService.listTypeTop(6)); // 侧边栏的分类信息
         model.addAttribute("tags", tagService.listTagTop(10));  // 侧边栏的标签信息

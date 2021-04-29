@@ -17,8 +17,11 @@ public class MD5Util {
      */
     public static String code(String str) {
         try {
+            // 传入的参数指定计算消息摘要所使用的算法，常用的有"MD5"，"SHA"等。
             MessageDigest md = MessageDigest.getInstance("MD5");
+            // str为需要计算的字符串，update传入的参数是字节类型或字节类型数组，对于字符串，需要先使用getBytes( )方法生成字符串数组。
             md.update(str.getBytes());
+            // 计算信息摘要
             byte[] byteDigest = md.digest();
             int i;
             StringBuilder sb = new StringBuilder("");
