@@ -112,13 +112,14 @@ public class BlogServiceImpl implements BlogService {
         blogToBeDeleted.setUser(null);
         blogToBeDeleted.setType(null);
         blogRepository.save(blogToBeDeleted);
-        // 获取这篇博客下的所有顶级评论
+        // 获取这篇博客下的所有评论并将外键置空
         List<Comment> comments = commentRepository.findByBlogId(blogToBeDeleted.getId());
         for (Comment comment : comments) {
             comment.setBlog(null);
             comment.setParentComment(null);
         }
         commentRepository.saveAll(comments);
+        // 删除博客和该博客下的评论
         blogRepository.deleteById(id);
         commentRepository.deleteAll(comments);
     }
