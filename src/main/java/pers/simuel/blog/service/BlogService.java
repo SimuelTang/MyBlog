@@ -6,6 +6,7 @@ import pers.simuel.blog.dto.BlogQuery;
 import pers.simuel.blog.entity.Blog;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BlogService {
     Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
@@ -27,4 +28,10 @@ public interface BlogService {
     Page<Blog> listBlog(String s, Pageable pageable);
 
     Page<Blog> listPublishedBlog(Pageable pageable);
+
+    Page<Blog> listBlog(Long id, Pageable pageable);
+
+    Map<String, List<Blog>> archiveBlog();
+
+    long countBlog();
 }

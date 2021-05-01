@@ -10,18 +10,18 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pers.simuel.blog.dao.BlogRepository;
+import pers.simuel.blog.dao.CommentRepository;
 import pers.simuel.blog.dto.BlogQuery;
 import pers.simuel.blog.entity.Blog;
+import pers.simuel.blog.entity.Comment;
 import pers.simuel.blog.entity.Type;
 import pers.simuel.blog.exceptions.NotFoundException;
 import pers.simuel.blog.service.BlogService;
 import pers.simuel.blog.utils.MarkdownUtils;
 import pers.simuel.blog.utils.MyBeanUtils;
 
-import javax.persistence.criteria.Predicate;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.persistence.criteria.*;
+import java.util.*;
 
 /**
  * @Author simuel_tang
@@ -33,6 +33,9 @@ public class BlogServiceImpl implements BlogService {
 
     @Autowired
     private BlogRepository blogRepository;
+
+    @Autowired
+    private CommentRepository commentRepository;
 
     /**
      * 管理员页面，根据分页的条件，动态查询出博客
@@ -101,7 +104,23 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public void deleteBlog(Long id) {
+        // 获取待删除的博客并将其外键置空
+        Blog blogToBeDeleted = getBlog(id);
+        if (blogToBeDeleted == null) {
+            throw new NotFoundException("没有找到这篇博客");
+        }
+        blogToBeDeleted.setUser(null);
+        blogToBeDeleted.setType(null);
+        blogRepository.save(blogToBeDeleted);
+        // 获取这篇博客下的所有顶级评论
+        List<Comment> comments = commentRepository.findByBlogId(blogToBeDeleted.getId());
+        for (Comment comment : comments) {
+            comment.setBlog(null);
+            comment.setParentComment(null);
+        }
+        commentRepository.saveAll(comments);
         blogRepository.deleteById(id);
+        commentRepository.deleteAll(comments);
     }
 
     @Override
@@ -144,5 +163,30 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Page<Blog> listPublishedBlog(Pageable pageable) {
         return blogRepository.findPublishedBlog(pageable);
+    }
+
+    @Override
+    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+        return blogRepository.findAll((Specification<Blog>) (root, criteriaQuery, criteriaBuilder) -> {
+            Join<String, Long> join = root.join("tags");
+            return criteriaBuilder.equal(join.get("id"), tagId);
+        }, pageable);
+    }
+
+    @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        // 获取所有年份
+        List<String> years = blogRepository.findGroupYear();
+        // 根据年份查找对应的博客并添加至Map中
+        Map<String, List<Blog>> map = new HashMap<>();
+        for (String year : years) {
+            map.put(year, blogRepository.findByYear(year));
+        }
+        return map;
+    }
+
+    @Override
+    public long countBlog() {
+        return blogRepository.count();
     }
 }

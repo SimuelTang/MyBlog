@@ -1,5 +1,7 @@
 package pers.simuel.blog.entity;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -35,7 +37,7 @@ public class Blog {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.PERSIST})
     private Type type;
 
     @ManyToMany(cascade = {CascadeType.PERSIST})
@@ -44,7 +46,7 @@ public class Blog {
     @ManyToOne
     private User user;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.ALL})
     private List<Comment> comments = new ArrayList<>();
 
     public List<Comment> getComments() {

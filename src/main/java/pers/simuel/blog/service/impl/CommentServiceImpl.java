@@ -23,13 +23,23 @@ public class CommentServiceImpl implements CommentService {
     @Autowired
     private CommentRepository commentRepository;
 
+    /**
+     * 根据博客id找出这篇博客下对应的评论
+     *
+     * @param blogId
+     * @return
+     */
     @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
         List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId, Sort.by("createTime"));
-        beautifiedComments(comments);
+        formatComments(comments);
         return comments;
     }
 
+    /**
+     * @param comment 新发表的评论
+     * @return
+     */
     @Transactional
     @Override
     public Comment saveComment(Comment comment) {
@@ -44,10 +54,15 @@ public class CommentServiceImpl implements CommentService {
         return commentRepository.save(comment);
     }
 
-    private void beautifiedComments(List<Comment> comments) {
+    /**
+     * 对某篇博客下的所有评论进行格式化
+     *
+     * @param comments
+     */
+    private void formatComments(List<Comment> comments) {
         // 对所有的顶级评论，找到它们的所有回复
         for (Comment comment : comments) {
-            // 获取处于顶级的回复
+            // 获取顶级回复
             List<Comment> replyComments = comment.getReplyComments();
             // 对于这些顶级回复，递归获取子级回复
             List<Comment> subComments = new ArrayList<>();
