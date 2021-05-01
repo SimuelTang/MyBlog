@@ -7,5 +7,5 @@ import pers.simuel.blog.entity.Comment;
 import java.util.List;
 
 public interface CommentRepository extends JpaRepository<Comment, Long> {
-    List<Comment> findByBlogId(Long blogId, Sort updateTime);
+    List<Comment> findByBlogIdAndParentCommentNull(Long blogId, Sort updateTime);
 }

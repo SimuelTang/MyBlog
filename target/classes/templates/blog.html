@@ -644,13 +644,14 @@ h5,h6{font-size:1em;}
                                    th:value="${session.user}!=null ? ${session.user.nickname}">
                         </div>
                     </div>
-                    <div class="field m-mobile-wide m-margin-bottom-small">
-                        <div class="ui left icon input">
-                            <i class="mail icon"></i>
-                            <input type="text" name="email" placeholder="邮箱"
-                                   th:value="${session.user}!=null ? ${session.user.email}">
-                        </div>
-                    </div>
+                    <!--         关闭对邮箱的填写           -->
+                    <!--                    <div class="field m-mobile-wide m-margin-bottom-small">-->
+                    <!--                        <div class="ui left icon input">-->
+                    <!--                            <i class="mail icon"></i>-->
+                    <!--                            <input type="text" name="email" placeholder="邮箱"-->
+                    <!--                                   th:value="${session.user}!=null ? ${session.user.email}">-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                     <div class="field  m-margin-bottom-small m-mobile-wide">
                         <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i
                                 class="edit icon"></i>发布
@@ -810,16 +811,16 @@ h5,h6{font-size:1em;}
                 identifier: 'nickname',
                 rules: [{
                     type: 'empty',
-                    prompt: '请输入你的大名'
+                    prompt: '请输入评论时的昵称'
                 }]
             },
-            type: {
-                identifier: 'email',
-                rules: [{
-                    type: 'email',
-                    prompt: '请填写正确的邮箱地址'
-                }]
-            }
+            // type: {
+            //     identifier: 'email',
+            //     rules: [{
+            //         type: 'email',
+            //         prompt: '请填写正确的邮箱地址'
+            //     }]
+            // }
         }
     });
 
@@ -844,10 +845,10 @@ h5,h6{font-size:1em;}
             "parentComment.id": $("[name='parentComment.id']").val(),
             "blog.id": $("[name='blog.id']").val(),
             "nickname": $("[name='nickname']").val(),
-            "email": $("[name='email']").val(),
+            // "email": $("[name='email']").val(),
             "content": $("[name='content']").val()
         }, function (responseTxt, statusTxt, xhr) {
-//        $(window).scrollTo($('#comment-container'),500);
+       $(window).scrollTo($('#comment-container'),300);
             clearContent();
         });
     }
@@ -864,7 +865,7 @@ h5,h6{font-size:1em;}
         var commentNickname = $(obj).data('commentnickname');
         $("[name='content']").attr("placeholder", "@" + commentNickname).focus();
         $("[name='parentComment.id']").val(commentId);
-        $(window).scrollTo($('#comment-form'), 500);
+        // $(window).scrollTo($('#comment-form'), 500);
     }
 
 

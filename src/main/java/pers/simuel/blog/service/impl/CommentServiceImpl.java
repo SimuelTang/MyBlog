@@ -8,6 +8,7 @@ import pers.simuel.blog.dao.CommentRepository;
 import pers.simuel.blog.entity.Comment;
 import pers.simuel.blog.service.CommentService;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -24,14 +25,15 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
-        List<Comment> comments = commentRepository.findByBlogId(blogId, Sort.by("createTime"));
+        List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId, Sort.by("createTime"));
+        beautifiedComments(comments);
         return comments;
     }
 
     @Transactional
     @Override
     public Comment saveComment(Comment comment) {
-        // 保存前，判断这条评论是否为父级评论
+        // 保存前，先判断这条评论是否为父级评论（默认id设置为-1）
         Long parentCommentId = comment.getParentComment().getId();
         if (parentCommentId != -1) { // 不是父级评论
             comment.setParentComment(commentRepository.findById(parentCommentId).orElse(null));
@@ -40,5 +42,29 @@ public class CommentServiceImpl implements CommentService {
         }
         comment.setCreateTime(new Date());
         return commentRepository.save(comment);
+    }
+
+    private void beautifiedComments(List<Comment> comments) {
+        // 对所有的顶级评论，找到它们的所有回复
+        for (Comment comment : comments) {
+            // 获取处于顶级的回复
+            List<Comment> replyComments = comment.getReplyComments();
+            // 对于这些顶级回复，递归获取子级回复
+            List<Comment> subComments = new ArrayList<>();
+            for (Comment replyComment : replyComments) {
+                findAllSubComments(replyComment, subComments);
+            }
+            // 所有回复，相对与顶级评论，设置为同一级
+            comment.setReplyComments(subComments);
+        }
+    }
+
+    private void findAllSubComments(Comment replyComment, List<Comment> subComments) {
+        subComments.add(replyComment);
+        if (replyComment.getReplyComments().size() > 0) {
+            for (Comment reply : replyComment.getReplyComments()) {
+                findAllSubComments(reply, subComments);
+            }
+        }
     }
 }

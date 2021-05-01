@@ -47,8 +47,7 @@ public class CommentController {
         if (user != null) { // 如果不为空，说明是管理员
             comment.setAvatar(user.getAvatar());
             comment.setAdminComment(true);
-        } else {
-            // 设置评论用户的头像
+        } else {    // 普通游客
             comment.setAvatar(avatar);
         }
         // 评论保存至数据库
