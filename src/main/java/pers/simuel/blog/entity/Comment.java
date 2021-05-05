@@ -127,7 +127,6 @@ public class Comment {
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
                 ", blog=" + blog +
-                ", replyComments=" + replyComments +
                 ", parentComment=" + parentComment +
                 ", adminComment=" + adminComment +
                 '}';

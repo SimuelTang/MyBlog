@@ -497,10 +497,10 @@ h5,h6{font-size:1em;}
             <div class="ui middle aligned grid">
                 <div class="eleven wide column">
                     <ui class="list">
-                        <li>作者：<span th:text="${blog.user.nickname}">李仁密</span><a href="#" th:href="@{/about}"
+                        <li>作者：<span th:text="${blog.user.nickname}">汤新苗</span><a href="#" th:href="@{/about}"
                                                                                   target="_blank">（联系作者）</a></li>
                         <li>发表时间：<span
-                                th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2017-10-02 09:08</span>
+                                th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2021-05-05 09:08</span>
                         </li>
                         <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
                         <li>公众号转载：请在文末添加作者公众号二维码</li>
@@ -566,6 +566,8 @@ h5,h6{font-size:1em;}
                                             <a class="reply" data-commentid="1" data-commentnickname="Matt"
                                                th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}"
                                                onclick="reply(this)">回复</a>
+                                            <a href="#" th:href="@{/deletecomments/{id}(id=${reply.id})}"
+                                               th:attr="data-commentid=${reply.id}">删除</a>
                                         </div>
                                     </div>
                                 </div>
@@ -708,8 +710,8 @@ h5,h6{font-size:1em;}
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item m-text-thin">Email：lirenmi@163.com</a>
-                    <a href="#" class="item m-text-thin">QQ：865729312</a>
+                    <a href="#" class="item m-text-thin">Email：1491101684@qq.com</a>
+                    <a href="#" class="item m-text-thin">QQ：1491101684</a>
                 </div>
             </div>
             <div class="seven wide column">
@@ -718,7 +720,7 @@ h5,h6{font-size:1em;}
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2016 - 2017 Lirenmi Designed by Lirenmi</p>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © /p>
     </div>
 
 </footer>
@@ -779,7 +781,7 @@ h5,h6{font-size:1em;}
     });
 
     $('#toTop-button').click(function () {
-        $(window).scrollTo(0, 500);
+        $(window).scrollTo(0, 300);
     });
 
 
@@ -828,16 +830,14 @@ h5,h6{font-size:1em;}
         $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
     });
 
-
     $('#commentpost-btn').click(function () {
-        var boo = $('.ui.form').form('validate form');
+        const boo = $('.ui.form').form('validate form');
         if (boo) {
             console.log('校验成功');
             postData();
         } else {
             console.log('校验失败');
         }
-
     });
 
     function postData() {
@@ -869,6 +869,12 @@ h5,h6{font-size:1em;}
         // $(window).scrollTo($('#comment-form'), 500);
     }
 
+    function deleteComment() {
+        $("#comment-container").load(/*[[@{/comments}]]*/"", {}, function (responseTxt, statusTxt, xhr) {
+            $(window).scrollTo($('#comment-container'), 300);
+            clearContent();
+        });
+    }
 
 </script>
 </body>

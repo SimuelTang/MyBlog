@@ -8,4 +8,8 @@ public interface CommentService {
     List<Comment> listCommentByBlogId(Long blogId);
 
     Comment saveComment(Comment comment);
+
+    void deleteComment(Comment comment);
+
+    Comment findByCommentId(Long id);
 }

@@ -15,7 +15,7 @@ public class MD5Util {
      * @param str 要加密的字符串
      * @return 加密后的字符串
      */
-    public static String code(String str) {
+    public static String encrypt(String str) {
         try {
             // 传入的参数指定计算消息摘要所使用的算法，常用的有"MD5"，"SHA"等。
             MessageDigest md = MessageDigest.getInstance("MD5");
@@ -41,6 +41,9 @@ public class MD5Util {
             e.printStackTrace();
             return null;
         }
+    }
 
+    public static void main(String[] args) {
+        System.out.println(MD5Util.encrypt("Txm20000115"));
     }
 }

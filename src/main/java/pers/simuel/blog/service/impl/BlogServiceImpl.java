@@ -49,7 +49,7 @@ public class BlogServiceImpl implements BlogService {
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blogQuery) {
         return blogRepository.findAll((Specification<Blog>) (root, criteriaQuery, criteriaBuilder) -> {
             List<Predicate> predicates = new ArrayList<>();
-            if (!"".equals(blogQuery.getTitle()) && blogQuery.getTitle() != null) {
+            if (blogQuery.getTitle() != null && !"".equals(blogQuery.getTitle())) {
                 predicates.add(criteriaBuilder.like(root.get("title"), "%" + blogQuery.getTitle() + "%"));
             }
             if (blogQuery.getTypeId() != null) {

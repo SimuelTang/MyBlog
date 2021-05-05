@@ -29,6 +29,7 @@ public class CommentServiceImpl implements CommentService {
      * @param blogId
      * @return
      */
+    @Transactional
     @Override
     public List<Comment> listCommentByBlogId(Long blogId) {
         List<Comment> comments = commentRepository.findByBlogIdAndParentCommentNull(blogId, Sort.by("createTime"));
@@ -45,7 +46,7 @@ public class CommentServiceImpl implements CommentService {
     public Comment saveComment(Comment comment) {
         // 保存前，先判断这条评论是否为父级评论（默认id设置为-1）
         Long parentCommentId = comment.getParentComment().getId();
-        if (parentCommentId != -1) { // 不是父级评论
+        if (parentCommentId != -1) { // 不是一级评论
             comment.setParentComment(commentRepository.findById(parentCommentId).orElse(null));
         } else {
             comment.setParentComment(null);
@@ -53,6 +54,37 @@ public class CommentServiceImpl implements CommentService {
         comment.setCreateTime(new Date());
         return commentRepository.save(comment);
     }
+
+    @Transactional
+    @Override
+    public Comment findByCommentId(Long commentId) {
+        return commentRepository.findCommentById(commentId);
+    }
+
+    @Transactional
+    @Override
+    public void deleteComment(Comment comment) {
+        Long parentCommentId = comment.getParentComment().getId();
+        if (parentCommentId != -1) {    // 不是一级评论
+            deleteSelf(comment);
+        } else {    // 一级评论，删除其本身和所有子评论
+            deleteSelfAndSubs(comment);
+        }
+    }
+    
+    private void deleteSelfAndSubs(Comment comment) {
+    }
+
+    private void deleteSelf(Comment comment) {
+        // 找到这条评论的所有一级回复，将这些回复的parentId置空
+        List<Comment> replyComments = comment.getReplyComments();
+        for (Comment replyComment : replyComments) {
+            replyComment.setParentComment(null);
+        }
+        // 删除这条评论
+        commentRepository.delete(comment);
+    }
+
 
     /**
      * 对某篇博客下的所有评论进行格式化

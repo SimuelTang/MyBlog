@@ -6,6 +6,7 @@ import org.commonmark.ext.gfm.tables.TablesExtension;
 import org.commonmark.ext.heading.anchor.HeadingAnchorExtension;
 import org.commonmark.node.Link;
 import org.commonmark.node.Node;
+import org.commonmark.node.Paragraph;
 import org.commonmark.parser.Parser;
 import org.commonmark.renderer.html.AttributeProvider;
 import org.commonmark.renderer.html.HtmlRenderer;
@@ -26,10 +27,13 @@ public class MarkdownUtils {
         Set<Extension> headingAnchorExtensions = Collections.singleton(HeadingAnchorExtension.create());
         //转换table的HTML
         List<Extension> tableExtension = Collections.singletonList(TablesExtension.create());
+        // 以table作为扩展创建解析器
         Parser parser = Parser.builder()
                 .extensions(tableExtension)
                 .build();
+        // 解析的内容
         Node document = parser.parse(content);
+        // 界面渲染
         HtmlRenderer renderer = HtmlRenderer.builder()
                 .extensions(headingAnchorExtensions)
                 .extensions(tableExtension)
@@ -50,6 +54,9 @@ public class MarkdownUtils {
             }
             if (node instanceof TableBlock) {
                 attributes.put("class", "ui celled table");
+            }
+            if (node instanceof Paragraph) {
+                attributes.put("class", "typo-first");
             }
         }
     }

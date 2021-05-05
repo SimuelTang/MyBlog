@@ -54,4 +54,12 @@ public class CommentController {
         commentService.saveComment(comment);
         return "redirect:/comments/" + blogId;
     }
+
+    @GetMapping("/deletecomments/{id}")
+    public String deleteComment(@PathVariable Long id) {
+        Comment comment = commentService.findByCommentId(id);
+        Long blogId = comment.getBlog().getId();
+        commentService.deleteComment(comment);
+        return "redirect:/blog/" + blogId;
+    }
 }
