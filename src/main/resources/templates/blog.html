@@ -540,6 +540,8 @@ h5,h6{font-size:1em;}
                                     <a class="reply" data-commentid="1" data-commentnickname="Matt"
                                        th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}"
                                        onclick="reply(this)">回复</a>
+                                    <a href="#" th:href="@{/deletecomments/{id}(id=${comment.id})}"
+                                       th:attr="data-commentid=${comment.id}" onclick="deleteComment()">删除</a>
                                 </div>
                             </div>
                             <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
@@ -567,7 +569,7 @@ h5,h6{font-size:1em;}
                                                th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}"
                                                onclick="reply(this)">回复</a>
                                             <a href="#" th:href="@{/deletecomments/{id}(id=${reply.id})}"
-                                               th:attr="data-commentid=${reply.id}">删除</a>
+                                               th:attr="data-commentid=${reply.id}" onclick="deleteComment()">删除</a>
                                         </div>
                                     </div>
                                 </div>
@@ -830,6 +832,7 @@ h5,h6{font-size:1em;}
         $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
     });
 
+    // 发布按钮的提交会触发次方法
     $('#commentpost-btn').click(function () {
         const boo = $('.ui.form').form('validate form');
         if (boo) {
@@ -840,6 +843,9 @@ h5,h6{font-size:1em;}
         }
     });
 
+    /**
+     * 点击发布按钮后会调用这个方法（真正的提交、回复操作）
+     */
     function postData() {
         $("#comment-container").load(/*[[@{/comments}]]*/"", {
             "parentComment.id": $("[name='parentComment.id']").val(),
@@ -859,6 +865,10 @@ h5,h6{font-size:1em;}
         $("[name='content']").attr("placeholder", "请输入评论信息...");
     }
 
+    /**
+     * 这个方法主要是用来更改评论框的状态，与真正的提交并没有关系
+     * @param obj
+     */
     function reply(obj) {
         // 点击回复时，获取被回复的评论的id和评论者的名字
         const commentId = $(obj).data('commentid');
@@ -870,10 +880,7 @@ h5,h6{font-size:1em;}
     }
 
     function deleteComment() {
-        $("#comment-container").load(/*[[@{/comments}]]*/"", {}, function (responseTxt, statusTxt, xhr) {
-            $(window).scrollTo($('#comment-container'), 300);
-            clearContent();
-        });
+
     }
 
 </script>

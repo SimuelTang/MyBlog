@@ -64,22 +64,41 @@ public class CommentServiceImpl implements CommentService {
     @Transactional
     @Override
     public void deleteComment(Comment comment) {
-        Long parentCommentId = comment.getParentComment().getId();
-        if (parentCommentId != -1) {    // 不是一级评论
+        Comment parentComment = comment.getParentComment();
+        if (parentComment != null) {    // 不是一级评论
             deleteSelf(comment);
         } else {    // 一级评论，删除其本身和所有子评论
             deleteSelfAndSubs(comment);
         }
     }
-    
+
+    /**
+     * 删除自身和所有的回复
+     *
+     * @param comment
+     */
     private void deleteSelfAndSubs(Comment comment) {
+        // 获取所有顶级回复
+        List<Comment> replyComments = comment.getReplyComments();
+        // 获取所有顶级回复的所有子级回复
+        List<Comment> subComments = new ArrayList<>();
+        for (Comment replyComment : replyComments) {
+            findAllSubComments(replyComment, subComments);
+            replyComment.setParentComment(null);
+        }
+        for (Comment subComment : subComments) {
+            subComment.setParentComment(null);
+        }
+        commentRepository.deleteAll(replyComments);
+        commentRepository.deleteAll(subComments);
+        commentRepository.delete(comment);
     }
 
     private void deleteSelf(Comment comment) {
-        // 找到这条评论的所有一级回复，将这些回复的parentId置空
+        // 找到这条评论的所有一级回复，将这些回复的parentId置为自己parent的id
         List<Comment> replyComments = comment.getReplyComments();
         for (Comment replyComment : replyComments) {
-            replyComment.setParentComment(null);
+            replyComment.setParentComment(comment.getParentComment());
         }
         // 删除这条评论
         commentRepository.delete(comment);
@@ -106,6 +125,12 @@ public class CommentServiceImpl implements CommentService {
         }
     }
 
+    /**
+     * 获取某个顶级回复的所有子级回复
+     *
+     * @param replyComment
+     * @param subComments
+     */
     private void findAllSubComments(Comment replyComment, List<Comment> subComments) {
         subComments.add(replyComment);
         if (replyComment.getReplyComments().size() > 0) {
