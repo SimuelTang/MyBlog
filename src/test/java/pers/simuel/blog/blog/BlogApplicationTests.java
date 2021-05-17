@@ -8,6 +8,8 @@ class BlogApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println(2 << 24);
+        System.out.println(1 << 25);
     }
 
 }

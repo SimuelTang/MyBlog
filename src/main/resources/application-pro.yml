@@ -2,9 +2,9 @@ spring:
   # 配置数据库
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://139.224.107.65:3306/blog?serverTimezone=Asia/Shanghai
     username: root
-    password: txmer
+    password: Txm152058
   # spring boot集成的数据库操作工具
   jpa:
     hibernate:
@@ -20,7 +20,7 @@ logging:
     pers.simuel: info
   file:
     name: log/blog-pro.log
-    
+
 # 生产环境端口
 server:
-  port: 8081
+  port: 8080

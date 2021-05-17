@@ -1,0 +1,4 @@
+2021-05-13 23:48:04.440  INFO 11064 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Starting BlogApplicationTests using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 11064 (started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-13 23:48:04.475  INFO 11064 --- [main] p.simuel.blog.blog.BlogApplicationTests  : The following profiles are active: pro
+2021-05-13 23:48:15.545  INFO 5384 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Starting BlogApplicationTests using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 5384 (started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-13 23:48:15.547  INFO 5384 --- [main] p.simuel.blog.blog.BlogApplicationTests  : The following profiles are active: pro

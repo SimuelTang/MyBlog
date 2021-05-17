@@ -1,0 +1,4 @@
+2021-05-08 19:48:10.174  INFO 2332 --- [restartedMain] pers.simuel.blog.BlogApplication         : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 2332 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-08 19:48:10.181  INFO 2332 --- [restartedMain] pers.simuel.blog.BlogApplication         : The following profiles are active: pro
+2021-05-08 19:48:15.592  WARN 2332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-08 19:48:16.199  INFO 2332 --- [restartedMain] pers.simuel.blog.BlogApplication         : Started BlogApplication in 6.548 seconds (JVM running for 8.1)

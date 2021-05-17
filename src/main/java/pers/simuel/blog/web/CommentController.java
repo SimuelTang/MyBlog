@@ -60,6 +60,6 @@ public class CommentController {
         Comment comment = commentService.findByCommentId(id);
         Long blogId = comment.getBlog().getId();
         commentService.deleteComment(comment);
-        return "redire  ct:/blog/" + blogId;
+        return "redirect:/blog/" + blogId;
     }
 }

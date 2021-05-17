@@ -12,7 +12,7 @@ spring:
 logging:
   level:
     root: info
-    com.lrm: debug
+    pers.simuel: debug
   file:
     name: log/blog-dev.log
 

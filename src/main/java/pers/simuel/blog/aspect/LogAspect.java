@@ -29,7 +29,6 @@ public class LogAspect {
     public void log() {
     }
 
-
     @Before("log()")
     public void doBefore(JoinPoint joinPoint) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
@@ -48,7 +47,7 @@ public class LogAspect {
     }
 
     @AfterReturning(returning = "result", pointcut = "log()")
-    public void doAfterRuturn(Object result) {
+    public void doAfterReturn(Object result) {
         logger.info("Result : {}", result);
     }
 

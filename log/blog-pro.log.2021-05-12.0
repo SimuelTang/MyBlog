@@ -1,0 +1,17 @@
+2021-05-12 14:06:36.242  INFO 16876 --- [restartedMain] pers.simuel.blog.BlogApplication         : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16876 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-12 14:06:36.246  INFO 16876 --- [restartedMain] pers.simuel.blog.BlogApplication         : The following profiles are active: pro
+2021-05-12 14:06:36.978  WARN 16876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-12 14:06:37.128  INFO 16876 --- [restartedMain] pers.simuel.blog.BlogApplication         : Started BlogApplication in 0.921 seconds (JVM running for 2063.127)
+2021-05-12 14:06:38.554  INFO 11604 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Starting BlogApplicationTests using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 11604 (started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-12 14:06:38.555  INFO 11604 --- [main] p.simuel.blog.blog.BlogApplicationTests  : The following profiles are active: pro
+2021-05-12 14:06:39.819  INFO 16876 --- [restartedMain] pers.simuel.blog.BlogApplication         : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 16876 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-12 14:06:39.819  INFO 16876 --- [restartedMain] pers.simuel.blog.BlogApplication         : The following profiles are active: pro
+2021-05-12 14:06:40.885  WARN 16876 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-12 14:06:41.182  INFO 16876 --- [restartedMain] pers.simuel.blog.BlogApplication         : Started BlogApplication in 1.397 seconds (JVM running for 2067.181)
+2021-05-12 14:06:45.204  WARN 11604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-12 14:06:46.025  INFO 11604 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Started BlogApplicationTests in 7.862 seconds (JVM running for 8.767)
+2021-05-12 15:23:29.363  WARN 16876 --- [HikariPool-7 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Thread starvation or clock leap detected (housekeeper delta=17m47s794ms199µs300ns).
+2021-05-12 18:41:38.413  INFO 2368 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Starting BlogApplicationTests using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 2368 (started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-12 18:41:38.415  INFO 2368 --- [main] p.simuel.blog.blog.BlogApplicationTests  : The following profiles are active: pro
+2021-05-12 18:41:48.481  WARN 2368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-12 18:41:49.601  INFO 2368 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Started BlogApplicationTests in 11.733 seconds (JVM running for 12.989)

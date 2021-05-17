@@ -67,7 +67,7 @@
 
             <h2 class="ui center aligned header" th:text="${blog.title}">关于刻意练习的清单</h2>
             <br>
-            <!--中间主要内容部分-->
+            <!--中间文字部分主要内容部分-->
             <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large"
                  th:utext="${blog.content}">
 
@@ -512,6 +512,7 @@ h5,h6{font-size:1em;}
                 </div>
             </div>
         </div>
+        <!--    留言区域    -->
         <div class="ui bottom attached segment" th:if="${blog.commentabled}">
             <!--留言区域列表-->
             <div id="comment-container" class="ui teal segment">
@@ -541,7 +542,8 @@ h5,h6{font-size:1em;}
                                        th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}"
                                        onclick="reply(this)">回复</a>
                                     <a href="#" th:href="@{/deletecomments/{id}(id=${comment.id})}"
-                                       th:attr="data-commentid=${comment.id}" onclick="deleteComment()">删除</a>
+                                       th:attr="data-commentid=${comment.id}" onclick="deleteComment()"
+                                       th:if="${comment.adminComment}">删除</a>
                                 </div>
                             </div>
                             <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
@@ -569,7 +571,8 @@ h5,h6{font-size:1em;}
                                                th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}"
                                                onclick="reply(this)">回复</a>
                                             <a href="#" th:href="@{/deletecomments/{id}(id=${reply.id})}"
-                                               th:attr="data-commentid=${reply.id}" onclick="deleteComment()">删除</a>
+                                               th:attr="data-commentid=${reply.id}" onclick="deleteComment()"
+                                               th:if="${reply.adminComment}">删除</a>
                                         </div>
                                     </div>
                                 </div>
@@ -668,6 +671,7 @@ h5,h6{font-size:1em;}
     </div>
 </div>
 
+<!--右下角导航栏-->
 <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none">
     <div class="ui vertical icon buttons ">
         <button type="button" class="ui toc teal button">目录</button>
@@ -787,7 +791,7 @@ h5,h6{font-size:1em;}
     });
 
 
-    var waypoint = new Waypoint({
+    const waypoint = new Waypoint({
         element: document.getElementById('waypoint'),
         handler: function (direction) {
             if (direction == 'down') {
@@ -797,8 +801,7 @@ h5,h6{font-size:1em;}
             }
             console.log('Scrolled to waypoint!  ' + direction);
         }
-    })
-
+    });
 
     //评论表单验证
     $('.ui.form').form({
