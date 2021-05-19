@@ -2,3 +2,7 @@
 2021-05-17 21:26:19.780  INFO 8576 --- [main] p.simuel.blog.blog.BlogApplicationTests  : The following profiles are active: pro
 2021-05-17 21:26:27.280  WARN 8576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-05-17 21:26:28.242  INFO 8576 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Started BlogApplicationTests in 9.038 seconds (JVM running for 9.927)
+2021-05-17 21:34:45.558  INFO 17804 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Starting BlogApplicationTests using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 17804 (started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-05-17 21:34:45.559  INFO 17804 --- [main] p.simuel.blog.blog.BlogApplicationTests  : The following profiles are active: pro
+2021-05-17 21:34:52.304  WARN 17804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-17 21:34:53.214  INFO 17804 --- [main] p.simuel.blog.blog.BlogApplicationTests  : Started BlogApplicationTests in 8.055 seconds (JVM running for 8.934)
