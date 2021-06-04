@@ -56,10 +56,10 @@ public class CommentController {
     }
 
     @GetMapping("/deletecomments/{id}")
-    public String deleteComment(@PathVariable Long id) {
-        Comment comment = commentService.findByCommentId(id);
+    public String deleteComment(@PathVariable String id) {
+        Comment comment = commentService.findByCommentId(Long.parseLong(id));
         Long blogId = comment.getBlog().getId();
         commentService.deleteComment(comment);
-        return "redirect:/blog/" + blogId;
+        return "redirect:/comments/" + blogId;
     }
 }

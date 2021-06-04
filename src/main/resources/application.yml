@@ -6,7 +6,7 @@ spring:
     encoding: utf-8
   # 指定配置哪种环境
   profiles:
-    active: pro
+    active: dev
   messages:
     basename: i18n/messages
 

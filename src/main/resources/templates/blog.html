@@ -541,9 +541,11 @@ h5,h6{font-size:1em;}
                                     <a class="reply" data-commentid="1" data-commentnickname="Matt"
                                        th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}"
                                        onclick="reply(this)">回复</a>
-                                    <a href="#" th:href="@{/deletecomments/{id}(id=${comment.id})}"
-                                       th:attr="data-commentid=${comment.id}" onclick="deleteComment()"
-                                       th:if="${comment.adminComment}">删除</a>
+<!--                                    <a href="#" th:href="@{/deletecomments/{id}(id=${comment.id})}"-->
+<!--                                       th:attr="data-commentid=${comment.id}" onclick="deleteComment()"-->
+<!--                                       th:if="${session.user}">删除</a>-->
+                                    <a href="#" th:attr="data-commentid=${comment.id}"
+                                       th:if="${session.user}" onclick="deleteComment(this)">删除</a>
                                 </div>
                             </div>
                             <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
@@ -570,9 +572,11 @@ h5,h6{font-size:1em;}
                                             <a class="reply" data-commentid="1" data-commentnickname="Matt"
                                                th:attr="data-commentid=${reply.id},data-commentnickname=${reply.nickname}"
                                                onclick="reply(this)">回复</a>
-                                            <a href="#" th:href="@{/deletecomments/{id}(id=${reply.id})}"
-                                               th:attr="data-commentid=${reply.id}" onclick="deleteComment()"
-                                               th:if="${reply.adminComment}">删除</a>
+                                            <!--                                            <a href="#" th:href="@{/deletecomments/{id}(id=${reply.id})}"-->
+                                            <!--                                               th:attr="data-commentid=${reply.id}" onclick="deleteComment()"-->
+                                            <!--                                               th:if="${session.user}">删除</a>-->
+                                            <a href="#" th:attr="data-commentid=${reply.id}"
+                                               th:if="${session.user}" onclick="deleteComment(this)">删除</a>
                                         </div>
                                     </div>
                                 </div>
@@ -644,6 +648,7 @@ h5,h6{font-size:1em;}
                     <textarea name="content" placeholder="请输入评论信息..."></textarea>
                 </div>
                 <div class="fields">
+                    <!--      保留对昵称的填写              -->
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="user icon"></i>
@@ -665,7 +670,6 @@ h5,h6{font-size:1em;}
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -745,6 +749,7 @@ h5,h6{font-size:1em;}
 
 <script th:inline="javascript">
 
+    
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     });
@@ -790,7 +795,6 @@ h5,h6{font-size:1em;}
         $(window).scrollTo(0, 300);
     });
 
-
     const waypoint = new Waypoint({
         element: document.getElementById('waypoint'),
         handler: function (direction) {
@@ -831,6 +835,9 @@ h5,h6{font-size:1em;}
         }
     });
 
+    /**
+     * 初始阶段加载
+     */
     $(function () {
         $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
     });
@@ -848,6 +855,7 @@ h5,h6{font-size:1em;}
 
     /**
      * 点击发布按钮后会调用这个方法（真正的提交、回复操作）
+     * load的参数分别为：url data success
      */
     function postData() {
         $("#comment-container").load(/*[[@{/comments}]]*/"", {
@@ -882,10 +890,12 @@ h5,h6{font-size:1em;}
         // $(window).scrollTo($('#comment-form'), 500);
     }
 
-    function deleteComment() {
-
+    function deleteComment(obj) {
+        const commentid = $(obj).data('commentid');
+        const url = "/deletecomments/" + commentid;
+        $("#comment-container").load(url);
     }
-
+    
 </script>
 </body>
 </html>
