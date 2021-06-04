@@ -3731,3 +3731,72 @@ java.lang.NullPointerException: null
 2021-06-04 10:37:07.231  INFO 13084 --- [http-nio-8080-exec-5] pers.simuel.blog.aspect.LogAspect        : Result : _fragments :: newblogList
 2021-06-04 10:37:07.299  INFO 13084 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
 2021-06-04 10:37:07.313  INFO 13084 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
+2021-06-04 10:38:53.178  INFO 24100 --- [restartedMain] pers.simuel.blog.BlogApplication         : Starting BlogApplication using Java 1.8.0_191 on LAPTOP-5AT8U1QS with PID 24100 (E:\Java\JavaProjects\MyToys\MyBlog\target\classes started by Kyrito in E:\Java\JavaProjects\MyToys\MyBlog)
+2021-06-04 10:38:53.181 DEBUG 24100 --- [restartedMain] pers.simuel.blog.BlogApplication         : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-06-04 10:38:53.181  INFO 24100 --- [restartedMain] pers.simuel.blog.BlogApplication         : The following profiles are active: dev
+2021-06-04 10:38:53.226  INFO 24100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-04 10:38:53.226  INFO 24100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-04 10:38:53.891  INFO 24100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-04 10:38:53.959  INFO 24100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+2021-06-04 10:38:54.591  INFO 24100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-04 10:38:54.598  INFO 24100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-04 10:38:54.599  INFO 24100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-06-04 10:38:54.600  INFO 24100 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.24] using APR version [1.7.0].
+2021-06-04 10:38:54.600  INFO 24100 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-04 10:38:54.601  INFO 24100 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-04 10:38:54.604  INFO 24100 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-06-04 10:38:54.662  INFO 24100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-04 10:38:54.662  INFO 24100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1435 ms
+2021-06-04 10:38:54.802  INFO 24100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-04 10:38:54.837  INFO 24100 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-06-04 10:38:54.969  INFO 24100 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-04 10:38:55.052  INFO 24100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-04 10:38:56.337  INFO 24100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-04 10:38:56.350  INFO 24100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-04 10:38:57.104  INFO 24100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-04 10:38:57.112  INFO 24100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-04 10:38:57.164  INFO 24100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-04 10:38:58.082  WARN 24100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-04 10:38:58.244  INFO 24100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-04 10:38:58.334  INFO 24100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-04 10:38:58.587  INFO 24100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-04 10:38:58.594  INFO 24100 --- [restartedMain] pers.simuel.blog.BlogApplication         : Started BlogApplication in 5.916 seconds (JVM running for 7.708)
+2021-06-04 10:38:58.907  INFO 24100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-04 10:38:58.907  INFO 24100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-04 10:38:58.909  INFO 24100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-06-04 10:39:00.065  INFO 24100 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-04 10:39:00.101  INFO 24100 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-04 10:39:01.593  INFO 24100 --- [http-nio-8080-exec-10] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-04 10:39:01.605  WARN 24100 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-04 10:39:01.610  WARN 24100 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-04 10:39:01.614  INFO 24100 --- [http-nio-8080-exec-10] pers.simuel.blog.aspect.LogAspect        : Result : index
+2021-06-04 10:39:02.464  INFO 24100 --- [http-nio-8080-exec-1] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-04 10:39:02.471  INFO 24100 --- [http-nio-8080-exec-1] pers.simuel.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-04 10:39:06.314  INFO 24100 --- [http-nio-8080-exec-2] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/blog/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.blog', args=[58, {}]}
+2021-06-04 10:39:06.435  INFO 24100 --- [http-nio-8080-exec-2] pers.simuel.blog.aspect.LogAspect        : Result : blog
+2021-06-04 10:39:07.166  INFO 24100 --- [http-nio-8080-exec-3] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-04 10:39:07.171  INFO 24100 --- [http-nio-8080-exec-3] pers.simuel.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-04 10:39:07.274  INFO 24100 --- [http-nio-8080-exec-6] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
+2021-06-04 10:39:07.307  INFO 24100 --- [http-nio-8080-exec-6] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
+2021-06-04 10:39:18.719  INFO 24100 --- [http-nio-8080-exec-4] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/deletecomments/66', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.deleteComment', args=[66]}
+2021-06-04 10:39:18.827  INFO 24100 --- [http-nio-8080-exec-4] pers.simuel.blog.aspect.LogAspect        : Result : redirect:/comments/58
+2021-06-04 10:39:18.843  INFO 24100 --- [http-nio-8080-exec-8] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
+2021-06-04 10:39:18.854  INFO 24100 --- [http-nio-8080-exec-8] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
+2021-06-04 10:39:21.626  INFO 24100 --- [http-nio-8080-exec-1] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/deletecomments/67', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.deleteComment', args=[67]}
+2021-06-04 10:39:21.678  INFO 24100 --- [http-nio-8080-exec-1] pers.simuel.blog.aspect.LogAspect        : Result : redirect:/comments/58
+2021-06-04 10:39:21.685  INFO 24100 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
+2021-06-04 10:39:21.693  INFO 24100 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
+2021-06-04 10:39:22.800  INFO 24100 --- [http-nio-8080-exec-2] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/deletecomments/68', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.deleteComment', args=[68]}
+2021-06-04 10:39:22.861  INFO 24100 --- [http-nio-8080-exec-2] pers.simuel.blog.aspect.LogAspect        : Result : redirect:/comments/58
+2021-06-04 10:39:22.868  INFO 24100 --- [http-nio-8080-exec-3] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
+2021-06-04 10:39:22.875  INFO 24100 --- [http-nio-8080-exec-3] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
+2021-06-04 10:39:24.279  INFO 24100 --- [http-nio-8080-exec-7] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/deletecomments/69', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.deleteComment', args=[69]}
+2021-06-04 10:39:24.344  INFO 24100 --- [http-nio-8080-exec-7] pers.simuel.blog.aspect.LogAspect        : Result : redirect:/comments/58
+2021-06-04 10:39:24.351  INFO 24100 --- [http-nio-8080-exec-4] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
+2021-06-04 10:39:24.354  INFO 24100 --- [http-nio-8080-exec-4] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
+2021-06-04 10:39:27.328  INFO 24100 --- [http-nio-8080-exec-8] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/blog/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.blog', args=[58, {}]}
+2021-06-04 10:39:27.395  INFO 24100 --- [http-nio-8080-exec-8] pers.simuel.blog.aspect.LogAspect        : Result : blog
+2021-06-04 10:39:28.038  INFO 24100 --- [http-nio-8080-exec-5] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-04 10:39:28.044  INFO 24100 --- [http-nio-8080-exec-5] pers.simuel.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-04 10:39:28.135  INFO 24100 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/comments/58', ip='0:0:0:0:0:0:0:1', classMethod='pers.simuel.blog.web.CommentController.comments', args=[58, {}]}
+2021-06-04 10:39:28.139  INFO 24100 --- [http-nio-8080-exec-9] pers.simuel.blog.aspect.LogAspect        : Result : blog :: commentList
