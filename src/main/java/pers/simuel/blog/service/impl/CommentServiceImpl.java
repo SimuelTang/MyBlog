@@ -120,7 +120,7 @@ public class CommentServiceImpl implements CommentService {
             for (Comment replyComment : replyComments) {
                 findAllSubComments(replyComment, subComments);
             }
-            // 所有回复，相对与顶级评论，设置为同一级
+            // 所有子级回复，相对与顶级回复，设置为同一级
             comment.setReplyComments(subComments);
         }
     }

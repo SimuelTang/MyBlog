@@ -26,6 +26,10 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 只输入 /admin 或输入 /admin/login 时跳转到登录页面
+     * @return
+     */
     @GetMapping(value = {"", "/login"})
     public String loginPage() {
         return "admin/login";
@@ -46,7 +50,7 @@ public class LoginController {
             return ADMIN_REDIRECT_URL;
         }
     }
-
+    
     @GetMapping("/logout")
     public String logout(HttpSession session) {
         session.removeAttribute("user");

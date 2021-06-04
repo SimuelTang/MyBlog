@@ -60,6 +60,7 @@ public class TagController {
         if (result.hasErrors()) {
             return TAGS_INPUT_URL;
         }
+        // 如果添加成功
         Tag t = tagService.saveTag(tag);
         if (t == null) {
             attributes.addFlashAttribute("message", "新增失败");
@@ -68,8 +69,7 @@ public class TagController {
         }
         return TAGS_REDIRECT_URL;
     }
-
-
+    
     @PostMapping("/tags/{id}")
     public String update(@Valid Tag tag, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
         Tag tagToBeUpdated = tagService.getTagByName(tag.getName());

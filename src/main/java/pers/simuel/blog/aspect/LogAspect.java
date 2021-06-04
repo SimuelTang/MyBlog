@@ -25,7 +25,7 @@ public class LogAspect {
     /**
      * 对web包下的所有类应用切面
      */
-    @Pointcut("execution(* pers.simuel.web.*.*(..))")
+    @Pointcut("execution(* pers.simuel.blog.web.*.*(..))")
     public void log() {
     }
 
