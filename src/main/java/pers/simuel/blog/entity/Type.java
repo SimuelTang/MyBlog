@@ -14,6 +14,7 @@ import java.util.List;
 @Entity
 @Table(name = "t_type")
 public class Type {
+    
     @Id
     @GeneratedValue
     private Long id;

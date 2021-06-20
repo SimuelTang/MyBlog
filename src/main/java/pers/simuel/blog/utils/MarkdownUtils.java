@@ -22,6 +22,14 @@ import java.util.Set;
  * @Time 8:26
  */
 public class MarkdownUtils {
+
+    public static String markdownToHtml(String markdown) {
+        Parser parser = Parser.builder().build();
+        Node document = parser.parse(markdown);
+        HtmlRenderer renderer = HtmlRenderer.builder().build();
+        return renderer.render(document);
+    }
+    
     public static String markdownToHtmlExtensions(String content) {
         //标题生成id
         Set<Extension> headingAnchorExtensions = Collections.singleton(HeadingAnchorExtension.create());

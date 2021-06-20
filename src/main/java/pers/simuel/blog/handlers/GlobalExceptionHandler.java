@@ -21,7 +21,6 @@ import javax.servlet.http.HttpServletRequest;
 public class GlobalExceptionHandler {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-
     @ExceptionHandler(Exception.class)
     public ModelAndView exceptionHandler(HttpServletRequest request, Exception e) throws Exception {
         logger.error("Requst URL : {}，Exception : {}", request.getRequestURL(), e);

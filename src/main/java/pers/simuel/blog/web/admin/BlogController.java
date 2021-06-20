@@ -106,7 +106,6 @@ public class BlogController {
         blog.setUser((User) httpSession.getAttribute("user")); // 设置博客所有者为当前用户
         blog.setType(typeService.getType(blog.getType().getId())); // 设置博客所属分类(Type)
         blog.setTags(tagService.listTag(blog.getTagIds())); // 设置博客所属的所有标签
-        // 
         Blog b;
         if (blog.getId() == null) { // 无id，说明是新增博客
             b = blogService.saveBlog(blog);

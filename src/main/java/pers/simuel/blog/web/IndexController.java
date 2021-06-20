@@ -15,7 +15,7 @@ import pers.simuel.blog.service.TagService;
 import pers.simuel.blog.service.TypeService;
 
 /**
- * 前端首页控制器，负责展示博客的某些信息
+ * 前端首页控制器，负责展示博客的某些信息            `
  *
  * @Author simuel_tang
  * @Date 2021/4/28
@@ -40,12 +40,12 @@ public class IndexController {
      * @return
      */
     @GetMapping("/")
-    public String index(@PageableDefault(size = 8, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String index(@PageableDefault(size = 8, sort = {"createTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model) {
         model.addAttribute("page", blogService.listPublishedBlog(pageable)); // 中间的博客信息
         model.addAttribute("types", typeService.listTypeTop(6)); // 侧边栏的分类信息
         model.addAttribute("tags", tagService.listTagTop(10));  // 侧边栏的标签信息
-        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(5));  // 显示推荐博客
+        model.addAttribute("recommendBlogs", blogService.listRecommendBlogTop(4));  // 显示推荐博客
         return "index";
     }
 
@@ -77,10 +77,10 @@ public class IndexController {
         model.addAttribute("query", query);
         return "search";
     }
-
+    
     @GetMapping("/footer/newblog")
     public String newblogs(Model model) {
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(3));
+        model.addAttribute("newblogs", blogService.listRecommendBlogTop(4));
         return "_fragments :: newblogList";
     }
 }

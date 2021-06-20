@@ -44,9 +44,9 @@ public class CommentServiceImpl implements CommentService {
     @Transactional
     @Override
     public Comment saveComment(Comment comment) {
-        // 保存前，先判断这条评论是否为父级评论（默认id设置为-1）
+        // 保存前，先判断这条评论是否为父级评论（默认id 设置为-1）
         Long parentCommentId = comment.getParentComment().getId();
-        if (parentCommentId != -1) { // 不是一级评论
+        if (parentCommentId != -1) { // 该评论不是父级评论
             comment.setParentComment(commentRepository.findById(parentCommentId).orElse(null));
         } else {
             comment.setParentComment(null);
@@ -79,17 +79,18 @@ public class CommentServiceImpl implements CommentService {
      */
     private void deleteSelfAndSubs(Comment comment) {
         // 获取所有顶级回复
-        List<Comment> replyComments = comment.getReplyComments();
-        // 获取所有顶级回复的所有子级回复
+        List<Comment> topReplyComments = comment.getReplyComments();
+        // 获取所有顶级回复的所有子级回复，并将自己回复的父评论设为空
         List<Comment> subComments = new ArrayList<>();
-        for (Comment replyComment : replyComments) {
+        for (Comment replyComment : topReplyComments) {
             findAllSubComments(replyComment, subComments);
             replyComment.setParentComment(null);
         }
         for (Comment subComment : subComments) {
             subComment.setParentComment(null);
         }
-        commentRepository.deleteAll(replyComments);
+        // 进行删除操作
+        commentRepository.deleteAll(topReplyComments);
         commentRepository.deleteAll(subComments);
         commentRepository.delete(comment);
     }

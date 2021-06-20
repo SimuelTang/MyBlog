@@ -95,7 +95,7 @@ public class BlogServiceImpl implements BlogService {
         if (blogToBeUpdated == null) {
             throw new NotFoundException("这篇博客不存在");
         }
-        // 更新时忽略所有的空值
+        // 更新时忽略所有的空值（第三个参数表示可忽略的属性）
         BeanUtils.copyProperties(blog, blogToBeUpdated, MyBeanUtils.getNullPropertyNames(blog));
         blogToBeUpdated.setUpdateTime(new Date());
         return blogRepository.save(blogToBeUpdated);

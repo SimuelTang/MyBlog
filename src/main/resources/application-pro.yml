@@ -23,4 +23,4 @@ logging:
 
 # 生产环境端口
 server:
-  port: 8080
+  port: 80
