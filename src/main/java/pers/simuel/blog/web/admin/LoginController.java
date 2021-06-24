@@ -10,6 +10,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import pers.simuel.blog.entity.User;
 import pers.simuel.blog.service.UserService;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -39,9 +41,13 @@ public class LoginController {
     public String login(@RequestParam String username,
                         @RequestParam String password,
                         HttpSession session,
-                        RedirectAttributes attributes) {
+                        RedirectAttributes attributes,
+                        HttpServletResponse response) {
         User user = userService.checkUser(username, password);
         if (user != null) { // 判断用户是否存在
+            Cookie cookie = new Cookie(username, password);
+            cookie.setMaxAge(7 * 24 * 60 * 60); // 7天过期
+            response.addCookie(cookie);
             user.setPassword(null);
             session.setAttribute("user", user);
             return "admin/index";

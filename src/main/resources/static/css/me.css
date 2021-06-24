@@ -3,7 +3,7 @@ body{
     background-attachment:fixed;
     background-size: 100%;
     no-repeat: center top;
-    height: 100%;
+    height: 100%;   
     width: 100%;
 }
 .m-bg{
@@ -283,6 +283,11 @@ body{
     .m-mobile-wide {
         width: 100% !important;
     }
+    .m-mobile-specific {
+        display: block !important;
+        position: absolute;
+        height: 3%;
+    }
 }
 
 /*导航栏样式*/
@@ -381,7 +386,7 @@ body{
 
 .m-bg-class_cover {
     width: 100%;
-    height: 750px;
+    height: 100%;
     line-height: 50px;
     padding-left: 6px;
     background-color: rgba(0, 0, 0, .15);
@@ -486,6 +491,21 @@ body{
     height: calc(40vh - 2em);
     min-height: 20em;
     width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    body::before{
+        content:'';
+        position:fixed;
+        z-index:-1;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        background:url('../images/qian.jpg') no-repeat center;
+        background-size:cover;
+    }
+
 }
 
 
