@@ -77,10 +77,11 @@ public class IndexController {
         model.addAttribute("query", query);
         return "search";
     }
-    
+
     @GetMapping("/footer/newblog")
     public String newblogs(Model model) {
         model.addAttribute("newblogs", blogService.listRecommendBlogTop(4));
         return "_fragments :: newblogList";
     }
+    
 }
